@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>eyaksh</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <img src="transplogo.png" alt="logo should be here">
+      <header><span class="highlight"> &nbsp Customer Self-booking - Dr. Ashok C &nbsp</span></header>
+      <div class="progress-bar">
+        <div class="step">
+          <p>Name</p>
+          <div class="bullet">
+            <span>1</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <p>Contact</p>
+          <div class="bullet">
+            <span>2</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <p>Birth</p>
+          <div class="bullet">
+            <span>3</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <p>Upload</p>
+          <div class="bullet">
+            <span>4</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+      </div>
+      <div class="form-outer">
+        <form action="#">
+          <div class="page page1 slide-page">
+            <div class="title">Basic Info:</div>
+            <div class="field">
+              <div class="label">Customer name</div>
+              <input type="text" placeholder="enter your name" />
+            </div>
+            <div class="field">
+              <div class="label">Customer address</div>
+             <textarea rows="10" cols="90" placeholder="enter your address" required></textarea>
+            </div>
+            <div class="field">
+              <div class="label">Gender</div>
+              <select>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <div class="label">DOB</div>
+              <input type="date">
+            </div>
+            <div class="field">
+              <button class="firstNext next">Next</button>
+            </div>
+          </div>
+          <div class="page page2">
+            <div class="title">Contact Info:</div>
+            <div class="field">
+              <div class="label">Email</div>
+              <input type="email" placeholder="enter your email"/>
+            </div>
+            <div class="field">
+              <div class="label">Phone Number</div>
+              <input type="Number" placeholder="please enter your phone number" />
+            </div>
+            <div class="field btns">
+              <button class="prev-1 prev">Previous</button>
+              <button class="next-1 next">Next</button>
+            </div>
+          </div>
+          <div class=" page page3">
+            <div class="title">Date of Birth:</div>
+            <div class="field">
+              <div class="label">Select date and time</div>
+              <input type="datetime-local" />
+            </div>
+            <div class="field">
+              <!-- <div class="label">Select test</div> -->
+              <!-- *************************************** -->
+              <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Select test</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                  <option value="2919">24 HR URINE CREATININE CLEARANCE @ 600</option>
+<option value="2920" >ABS. GRANULOCYTE COUNT @ 300</option>
+<option value="2921">ABSOLUTE BASOPHIL COUNT @ 300</option>
+<option value="2922">ABSOLUTE EOSINOPHIL COUNT @ 300</option>
+<option value="2923">ABSOLUTE LEUCOCYTE COUNT @ 500</option>
+<option value="2924">ABSOLUTE LYMPHOCYTE COUNT @ 300</option>
+<option value="2925">ABSOLUTE MONOCYTE COUNT @ 300</option>
+<option value="2926">ABSOLUTE NEUTROPHIL COUNT @ 300</option>
+<option value="2927">ACETYLCHOLINE RECEPTOR ANTIBODIES @ 3000</option>
+<option value="2928">ACID PHOSPHATASE (PROSTATIC) @ 350</option>
+<option value="2929">ACTH ( ECLIA) @ 1800</option>
+<option value="2930">ACTIVATED PROTEIN C RESISTANCE (FACTOR V LEIDEN), CITRATED BLOOD @ 6000</option>
+<option value="2931">ACTIVE-B12 (HOLOTRANSCOBALAMIN) @ 2000</option>
+<option value="2932">ACUTE VIRAL HEPATITIS PANEL @ 5500</option>
+<option value="2933">ADENOSINE DEAMINASE (ENZYMATIC METHOD) @ 750</option>
+<option value="2934">ADOPTION PROFILE @ 13500</option>
+<option value="2935">ADVANCED SMART CHECK PROFILE (ADVANCE SMAC) @ 4750</option>
+<option value="2936">ADVANCED SMART CHECK PROFILE RANDOM (ADVANCE SMAC) @ 4750</option>
+<option value="2937">AFB SECOND LINE DRUG SENSITIVITY @ 15000</option>
+<option value="2938">AFB SIRE PANEL DRUG SENSITIVITY @ 4000</option>
+<option value="2939">AFP-TRIPLE TEST @ 750</option>
+<option value="2940">ALBUMIN CREATININE RATIO (SPOT) @ 100</option>
+</div>
+</div>
+
+            </div>
+            <div class="field">
+              <div class="label">Comments</div>
+              <textarea rows="5" cols="40" placeholder="Anything we need to know" required></textarea>
+            </div>
+            <div class="field btns">
+              <button class="prev-2 prev">Previous</button>
+              <button class="next-2 next">Next</button>
+            </div>
+          </div>
+          <div class="page">
+          
+            <div class="title">Login Details:</div>
+            <div class="field">
+            <div class="myway">
+            <form action="upload.php" method="POST">
+              <input type="file" multiple />
+              <p>Drag your  prescription files here or click in this area.</p>
+              <button  class ="btn" type="submit">Upload</button>
+            </form>
+        </div>
+            
+    </div>
+    <div class="field btns">
+      <button class="prev-3 prev">Previous</button>
+      <button class="submit" onclick="swalla()">&nbspBook Appointment &nbsp </button>
+    </div>
+   
+  </div>
+          
+        </form>
+    </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>
